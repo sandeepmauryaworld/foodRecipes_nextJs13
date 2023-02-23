@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 Image
 
@@ -9,10 +10,11 @@ const RecipeList = ({recipes, type}) => {
         {
             recipes.map((recipe,idx)=>{
                 return(
-                    <div className='rounded bg-slate overflow-hidden' key={idx}>
+                    <div className='rounded px-3 py-1 block mt-5 hover:bg-blue-200 text-center bg-slate-200 overflow-hidden' key={idx}>
                             <Image src={recipe.strMealThumb} alt='recipe img' height={500} width={500} />
-                            <div>
-                                <h2>{}</h2>
+                            <div className='p-5'>
+                                <h2 className='text-2xl font-bold'>{recipe.strMeal}</h2>
+                                <Link href={`/types/${type}/${recipe.idMeal}`} className='bg-blue-300 text-white'>Get Recipe Details </Link>
                             </div>
                     </div>
                 )
