@@ -10,13 +10,16 @@ export default function Home() {
     <>
       <div className=" h-screen w-full  homepage">
         <div className="w-4/5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
-          <h1 className="py-5 text-5xl">Explore Food from around the world </h1>
+          <h1 className="py-5 text-5xl">
+            Explore Food from ar ound the world{" "}
+          </h1>
           <Link
             href="/types"
             className="shadow-gray-50 bg-gray-300 rounded  py-2 px-4 cursor-pointer hover:bg-blue-400 hover:text-white text-xl"
           >
             {" "}
             List of cuisines
+            {}
           </Link>
         </div>
       </div>
