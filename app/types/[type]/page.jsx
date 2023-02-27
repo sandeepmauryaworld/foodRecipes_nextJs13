@@ -9,11 +9,11 @@ const getRecipes= async(type)=>{
     const response = await res.json();
     return response
 }
-const page = async({params}) => {
+const page = async({params }) => {
 
     const recipes= await getRecipes(params.type)
     console.log(recipes);
   return <RecipeList  recipes={recipes.meals} type={params.type}/>
 }
 
-export default page
+export default page  

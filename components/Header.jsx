@@ -22,3 +22,6 @@ const Header = () => {
 }
 
 export default Header
+
+
+// https://nextjs-learning-f6df7-default-rtdb.firebaseio.com/  api key 
